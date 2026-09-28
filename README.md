@@ -145,3 +145,49 @@ iface eth0 inet static
   netmask 255.255.255.0
   gateway 192.235.5.1
 ```
+
+4. install bind dan bind-tools
+   ```sh
+   apk update
+   apk add bind bind-tools
+   mkdir /etc/bind/jarkom
+   nano /etc/bind/named.conf.local
+           zone "iqbal.com" {
+            type master;
+            notify yes;
+            also-notify { 192.235.1.3; };
+            allow-transfer { 192.235.1.3; };
+            file "/etc/bind/jarkom/iqbal.com";
+           };
+   nano /etc/bind/jarkom/iqbal.com
+   $TTL    604800
+    @       IN      SOA     prab.iqbal.com. root.iqbal.com. (
+                            2026092801 ; Serial
+                            604800     ; Refresh
+                            86400      ; Retry
+                            2419200    ; Expire
+                            604800 )   ; Negative Cache TTL
+    ;
+    @       IN      NS      prab.iqbal.com.
+    @       IN      NS      tedd.iqbal.com.
+    prab    IN      A       192.235.1.2
+    tedd    IN      A       192.235.1.3
+    @       IN      A       192.235.3.2
+   
+   nano /etc/bind/named.conf.options
+   options {
+    directory "/var/bind";
+    forwarders {
+        192.168.122.1;
+    };
+    dnssec-validation no;
+    allow-query { any; };
+    auth-nxdomain no;
+    listen-on-v6 { any; };
+    };
+   mkdir -p /var/bind
+
+   nano /etc/bind/named.conf
+   ```
+
+   
