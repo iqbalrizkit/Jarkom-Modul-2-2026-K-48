@@ -250,6 +250,10 @@ curl -u 'prabs:pakar_pinter_jadi_gob***' -H "Host: www.iqbal.com" http://192.235
 ### Hasil
 Akses tanpa credential ditolak, sedangkan credential `prabs` dengan password yang ditentukan digunakan untuk mengakses `/admin`.
 
+### Dokumentasi
+![Uji Ping](assest/12-menambahkan-kredensial.png)
+![Uji Ping](assest/12-uji-coba-kredensial.png)
+
 ---
 
 # Nomor 13
