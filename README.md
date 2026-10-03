@@ -424,9 +424,8 @@ abbey.iqbal.com. 15 IN A 203.0.113.77
 
 Zone transfer berhasil sehingga `tedd` menerima record baru dan serial yang sama.
 
-### Catatan
-
-Query langsung ke `tedd` tidak membuktikan fase cache 15 detik karena `tedd` merupakan authoritative slave, bukan resolver caching. Fase cache seharusnya diuji melalui resolver caching yang melakukan query sebelum perubahan.
+### Dokumentasi
+![Uji Ping](assest/18-ubah-A-record.png)
 
 ---
 
