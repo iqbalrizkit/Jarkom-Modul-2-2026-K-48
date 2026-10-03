@@ -6,7 +6,7 @@
 
 | Nama | NRP |
 |---|---|
-| Iqbal Rizki Muhammad Fadhli | [NRP] |
+| Iqbal Rizki Muhammad Fadhli | 5027251027|
 | [Nama Anggota 2] | [NRP] |
 
 ---
