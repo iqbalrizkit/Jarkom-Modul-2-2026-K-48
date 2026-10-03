@@ -304,11 +304,11 @@ Tambahkan TXT record untuk Alpha, Beta, Gamma, Delta, dan Epsilon. Query TXT har
 ## Konfigurasi pada Prab
 
 ```dns
-alpha       IN      TXT     "alpha.iqbal.com"
-beta        IN      TXT     "beta.iqbal.com"
-gamma       IN      TXT     "gamma.iqbal.com"
-delta       IN      TXT     "delta.iqbal.com"
-epsilon     IN      TXT     "epsilon.iqbal.com"
+alpha       IN      TXT     "alpha"
+beta        IN      TXT     "beta"
+gamma       IN      TXT     "gamma"
+delta       IN      TXT     "delta"
+epsilon     IN      TXT     "epsilon"
 ```
 
 Serial SOA dinaikkan dari `10` menjadi `11`.
@@ -331,11 +331,11 @@ dig @127.0.0.1 epsilon.iqbal.com TXT +short
 ### Hasil
 
 ```text
-"alpha.iqbal.com"
-"beta.iqbal.com"
-"gamma.iqbal.com"
-"delta.iqbal.com"
-"epsilon.iqbal.com"
+"alpha"
+"beta"
+"gamma"
+"delta"
+"epsilon"
 ```
 
 TXT record berhasil ditambahkan dan dapat di-query melalui DNS master.
