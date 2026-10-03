@@ -471,6 +471,10 @@ Server: nginx/1.10.3 (Ubuntu)
 ### Hasil
 CNAME berhasil mengarah ke `http.badssl.com` dan request HTTP memperoleh respons `200 OK`.
 
+### Dokumentasi 
+![Uji Ping](assest/19-binding-domain.png)
+![Uji Ping](assest/19-perintah-curl-badssl-com.png)
+
 ---
 
 # Nomor 20
