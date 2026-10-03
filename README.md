@@ -338,6 +338,9 @@ dig @127.0.0.1 epsilon.iqbal.com TXT +short
 "epsilon"
 ```
 
+### Dokumentasi
+![Uji Ping](assest/17-konfigurasi-TXT-record.png)
+
 TXT record berhasil ditambahkan dan dapat di-query melalui DNS master.
 
 ---
