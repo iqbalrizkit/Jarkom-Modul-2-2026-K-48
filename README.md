@@ -294,6 +294,9 @@ Location: http://static.iqbal.com/
 ### Hasil
 Redirect Abbey berhasil diverifikasi dengan status `302` menuju `static.iqbal.com`. Penny dikonfigurasi dengan redirect permanen `301`.
 
+### Dokumentasi
+![Uji Ping](assest/13-status-code-301-302.png)
+
 ---
 
 # Nomor 17
