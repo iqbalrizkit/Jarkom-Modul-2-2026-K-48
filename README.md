@@ -63,6 +63,10 @@ ping -c 3 192.235.3.1
 ### Hasil
 Setiap node menggunakan alamat IP sesuai subnet dan `rootkit` sebagai default gateway.
 
+### Dokumentasi 
+![Topologi The Mesh](assest/1-topologi.png)
+![Uji Ping](assest/1-uji-ping.png)
+
 ---
 
 # Nomor 9
